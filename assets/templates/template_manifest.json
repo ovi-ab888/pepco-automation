@@ -19,13 +19,13 @@
   },
 
   "fields": [
-    { "id": "var_Order_ID",              "field": "Order_ID",              "x": 134.4186, "y": 129.561, "w": 75.1074, "h": 11.542, "font": "Tahoma regular", "size": <9>, "transform": ["trim"] },
-    { "id": "var_STYLE_CODE",            "field": "STYLE_CODE",            "x": 142.3591, "y": 144.6509, "w": 90.9883, "h": 11.542, "font": "Tahoma regular", "size": <9>, "transform": ["uppercase","trim"] },
-    { "id": "var_COLOUR",                "field": "COLOUR",                "x": 133.0012, "y": 174.8311, "w": 72.2725, "h": 11.542, "font": "Tahoma regular", "size": <9>, "transform": ["uppercase"] },
-    { "id": "var_Supplier_product_code", "field": "Supplier_product_code", "x": 161.405, "y": 159.7412, "w": 129.0801, "h": 11.542, "font": "Tahoma regular", "size": <9>,
-    { "id": "var_Department",            "field": "Item_classification",   "x": 643.2477, "y": 83.5876, "w": 74.4063, "h": 10.0698, "font": "Tahoma regular", "size": <9>,
-    { "id": "var_Supplier_name",         "field": "Supplier_name",         "x": 648.4792, "y": 94.9294, "w": 84.7969, "h": 10.0698, "font": "Tahoma regular", "size": <9>, "transform": ["capitalize"] },
-    { "id": "var_today_date",            "field": "today_date",            "x": 507.3356, "y": 49.3069, "w": 72.6914, "h": 11.5425, "font": "Tahoma regular", "size": <9>, "format": "YYYY-MM-DD" },
+    { "id": "var_Order_ID",              "field": "Order_ID",              "x": 134.4186, "y": 129.561, "w": 75.1074, "h": 11.542, "font": "Tahoma regular", "size": 9, "transform": ["trim"] },
+    { "id": "var_STYLE_CODE",            "field": "STYLE_CODE",            "x": 142.3591, "y": 144.6509, "w": 90.9883, "h": 11.542, "font": "Tahoma regular", "size": 9, "transform": ["uppercase","trim"] },
+    { "id": "var_COLOUR",                "field": "COLOUR",                "x": 133.0012, "y": 174.8311, "w": 72.2725, "h": 11.542, "font": "Tahoma regular", "size": 9, "transform": ["uppercase"] },
+    { "id": "var_Supplier_product_code", "field": "Supplier_product_code", "x": 161.405, "y": 159.7412, "w": 129.0801, "h": 11.542, "font": "Tahoma regular", "size": 9,
+    { "id": "var_Department",            "field": "Item_classification",   "x": 643.2477, "y": 83.5876, "w": 74.4063, "h": 10.0698, "font": "Tahoma regular", "size": 9,
+    { "id": "var_Supplier_name",         "field": "Supplier_name",         "x": 648.4792, "y": 94.9294, "w": 84.7969, "h": 10.0698, "font": "Tahoma regular", "size": 9, "transform": ["capitalize"] },
+    { "id": "var_today_date",            "field": "today_date",            "x": 507.3356, "y": 49.3069, "w": 72.6914, "h": 11.5425, "font": "Tahoma regular", "size": 9, "format": "YYYY-MM-DD" },
 
     { "id": "var_PLN", "field": "PLN", "x": 159.8239, "y": 399.7153, "w": 10.7314, "h": 22.22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "",     "format": "0" },
     { "id": "var_EUR", "field": "EUR", "x": 159.8239, "y": 331.6753, "w": 10.7305, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "€ ",   "format": "0" },
@@ -47,7 +47,7 @@
 
 
   "barcode": {
-    "id_text": "var_Barcode",          // যদি human-readable আলাদা টেক্সট থাকে
+    "id_text": "var_Barcode",   
     "field": "barcode",
     "type": "EAN13",
     "box": { "x": 126.0147, "y": 881.4041, "w": 82.2047, "h": 25.5118 },
@@ -59,7 +59,7 @@
   },
 
   "grid": {
-    "mode": "single",           // "single" = এক আর্টবোর্ডে ১টা ট্যাগ; "nup" = এক পেজে একাধিক
+    "mode": "single",
     "columns": 3,
     "rows": 1,
     "gap_mm": 0
