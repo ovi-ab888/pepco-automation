@@ -44,7 +44,6 @@
   { "id": "var_STYLE",         "field": "STYLE",         "x": 120.3732, "y": 853.1318, "w": 34.0283, "h": 5.9141, "font": "Arial regular", "size": 9, "transform": ["uppercase","trim"] },
   { "id": "var_Batch",         "field": "Batch",         "x": 120.3742, "y": 859.4785, "w": 31.0771, "h": 5.9141, "font": "Arial regular", "size": 9, "transform": ["uppercase","trim"] }
 
-      ],
 
   "barcode": {
     "id_text": "var_Barcode",   
