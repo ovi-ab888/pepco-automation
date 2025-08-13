@@ -1,1 +1,10 @@
+{
+  "template_path": "C:/workers/pepco/templates/pepco_template.ai",
+  "input_csv_path": "C:/workers/pepco/in/pepco_data.csv",
+  "output_dir": "C:/workers/pepco/out",
+  "pdf_preset": "High Quality Print",
+  "grid": { "columns": 3, "rows": 1, "gap_mm": 0 },
+  "barcode": { "type": "EAN13", "black_is_k100": true },
+  "locale_rules": { "price_zero_as_dash": false }
+}
 
