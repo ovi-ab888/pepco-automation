@@ -27,7 +27,7 @@
     { "id": "var_Supplier_name",         "field": "Supplier_name",         "x": 648.4792, "y": 94.9294, "w": 84.7969, "h": 10.0698, "font": "Tahoma regular", "size": 9, "transform": ["capitalize"] },
     { "id": "var_today_date",            "field": "today_date",            "x": 507.3356, "y": 49.3069, "w": 72.6914, "h": 11.5425, "font": "Tahoma regular", "size": 9, "format": "YYYY-MM-DD" },
 
-    { "id": "var_PLN", "field": "PLN", "x": 159.8239, "y": 399.7153, "w": 10.7314, "h": 22.22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "",     "format": "0" },
+    { "id": "var_PLN", "field": "PLN", "x": 159.8239, "y": 399.7153, "w": 10.7314, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "",   "format": "0" },
     { "id": "var_EUR", "field": "EUR", "x": 159.8239, "y": 331.6753, "w": 10.7305, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "€ ",   "format": "0" },
     { "id": "var_BGN", "field": "BGN", "x": 159.8239, "y": 354.3555, "w": 10.7305, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "лв ",  "format": "0" },
     { "id": "var_BAM", "field": "BAM", "x": 159.8239, "y": 377.0352, "w": 10.7305, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "KM ",  "format": "0" },
