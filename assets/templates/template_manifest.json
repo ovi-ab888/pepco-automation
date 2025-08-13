@@ -1,0 +1,61 @@
+{
+  "template_id": "pepco_tag_v1",
+  "units": "pt",
+  "page": {
+    "width": 130.394,
+    "height": 325.984,
+    "bleed": { "top": 0, "right": 0, "bottom": 0, "left": 0 }
+  },
+  "fonts": {
+    "regular": { "family": "<fill-me: e.g., Montserrat>", "path": "assets/fonts/<font-file.ttf>" },
+    "bold":    { "family": "<fill-me>", "path": "assets/fonts/<font-bold.ttf>" }
+  },
+  "defaults": {
+    "fill": "#000000",
+    "tracking": 0,
+    "leading": 1.1,
+    "overflow": "shrink-to-fit",
+    "align": "left"
+  },
+
+  "fields": [
+    { "id": "var_Order_ID",              "field": "Order_ID",              "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "regular", "size": <fill>, "transform": ["trim"] },
+    { "id": "var_STYLE_CODE",            "field": "STYLE_CODE",            "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "regular", "size": <fill>, "transform": ["uppercase","trim"] },
+    { "id": "var_COLOUR",                "field": "COLOUR",                "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "regular", "size": <fill>, "transform": ["uppercase"] },
+    { "id": "var_Supplier_product_code", "field": "Supplier_product_code", "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "regular", "size": <fill> },
+    { "id": "var_Department",            "field": "Item_classification",   "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "regular", "size": <fill> },
+    { "id": "var_Supplier_name",         "field": "Supplier_name",         "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "regular", "size": <fill>, "transform": ["capitalize"] },
+    { "id": "var_today_date",            "field": "today_date",            "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "regular", "size": <fill>, "format": "YYYY-MM-DD" },
+
+    { "id": "var_PLN", "field": "PLN", "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "bold", "size": <fill>, "prefix": "",     "format": "0" },
+    { "id": "var_EUR", "field": "EUR", "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "bold", "size": <fill>, "prefix": "€ ",   "format": "0" },
+    { "id": "var_BGN", "field": "BGN", "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "bold", "size": <fill>, "prefix": "лв ",  "format": "0" },
+    { "id": "var_BAM", "field": "BAM", "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "bold", "size": <fill>, "prefix": "KM ",  "format": "0" },
+    { "id": "var_RON", "field": "RON", "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "bold", "size": <fill>, "prefix": "lei ", "format": "0" },
+    { "id": "var_CZK", "field": "CZK", "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "bold", "size": <fill>, "prefix": "Kč ",  "format": "0" },
+    { "id": "var_RSD", "field": "RSD", "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "bold", "size": <fill>, "prefix": "дин ", "format": "0" },
+    { "id": "var_HUF", "field": "HUF", "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "bold", "size": <fill>, "prefix": "Ft ",  "format": "0" },
+
+    { "id": "var_PRODUCT_NAME", "field": "product_name", "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill>, "font": "regular", "size": <fill>,
+      "transform": ["titlecase"], "style_spans": [{ "match": "\\|[A-Z]{2,}\\|", "font": "bold" }] }
+  ],
+
+  "barcode": {
+    "id_text": "var_Barcode",          // যদি human-readable আলাদা টেক্সট থাকে
+    "field": "barcode",
+    "type": "EAN13",
+    "box": { "x": <fill>, "y": <fill>, "w": <fill>, "h": <fill> },
+    "quiet_zone_mm": 3,
+    "font": "regular",
+    "size": <fill>,
+    "black_is_k100": true,
+    "validate_checksum": true
+  },
+
+  "grid": {
+    "mode": "single",           // "single" = এক আর্টবোর্ডে ১টা ট্যাগ; "nup" = এক পেজে একাধিক
+    "columns": 3,
+    "rows": 1,
+    "gap_mm": 0
+  }
+}
