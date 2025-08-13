@@ -6,10 +6,16 @@
     "height": 325.984,
     "bleed": { "top": 0, "right": 0, "bottom": 0, "left": 0 }
   },
+
   "fonts": {
-    "regular": { "family": "<fill-me: e.g., Montserrat>", "path": "assets/fonts/<font-file.ttf>" },
-    "bold":    { "family": "<fill-me>", "path": "assets/fonts/<font-bold.ttf>" }
+    "regular":         { "family": "Tahoma",                 "path": "assets/templates/fonts/Tahoma.ttf" },
+    "bold":            { "family": "Tahoma Bold",            "path": "assets/templates/fonts/Tahoma-Bold.ttf" },
+    "myriad_regular":  { "family": "Myriad Pro",             "path": "assets/templates/fonts/MyriadPro-Regular.otf" },
+    "myriad_bold":     { "family": "Myriad Pro Semibold",    "path": "assets/templates/fonts/MyriadPro-Semibold.otf" },
+    "arial_regular":   { "family": "Arial",                  "path": "assets/templates/fonts/Arial.ttf" },
+    "arial_bold":      { "family": "Arial Bold",             "path": "assets/templates/fonts/Arial-Bold.ttf" }
   },
+
   "defaults": {
     "fill": "#000000",
     "tracking": 0,
@@ -19,39 +25,39 @@
   },
 
   "fields": [
-    { "id": "var_Order_ID",              "field": "Order_ID",              "x": 134.4186, "y": 129.561, "w": 75.1074, "h": 11.542, "font": "Tahoma regular", "size": 9, "transform": ["trim"] },
-    { "id": "var_STYLE_CODE",            "field": "STYLE_CODE",            "x": 142.3591, "y": 144.6509, "w": 90.9883, "h": 11.542, "font": "Tahoma regular", "size": 9, "transform": ["uppercase","trim"] },
-    { "id": "var_COLOUR",                "field": "COLOUR",                "x": 133.0012, "y": 174.8311, "w": 72.2725, "h": 11.542, "font": "Tahoma regular", "size": 9, "transform": ["uppercase"] },
-    { "id": "var_Supplier_product_code", "field": "Supplier_product_code", "x": 161.405, "y": 159.7412, "w": 129.0801, "h": 11.542, "font": "Tahoma regular", "size": 9,
-    { "id": "var_Department",            "field": "Item_classification",   "x": 643.2477, "y": 83.5876, "w": 74.4063, "h": 10.0698, "font": "Tahoma regular", "size": 9,
-    { "id": "var_Supplier_name",         "field": "Supplier_name",         "x": 648.4792, "y": 94.9294, "w": 84.7969, "h": 10.0698, "font": "Tahoma regular", "size": 9, "transform": ["capitalize"] },
-    { "id": "var_today_date",            "field": "today_date",            "x": 507.3356, "y": 49.3069, "w": 72.6914, "h": 11.5425, "font": "Tahoma regular", "size": 9, "format": "YYYY-MM-DD" },
+    { "id": "var_Order_ID",              "field": "Order_ID",              "x": 134.4186, "y": 129.561,  "w": 75.1074,  "h": 11.542,  "font": "regular",       "size": 9,  "transform": ["trim"] },
+    { "id": "var_STYLE_CODE",            "field": "STYLE_CODE",            "x": 142.3591, "y": 144.6509, "w": 90.9883,  "h": 11.542,  "font": "regular",       "size": 9,  "transform": ["uppercase","trim"] },
+    { "id": "var_COLOUR",                "field": "COLOUR",                "x": 133.0012, "y": 174.8311, "w": 72.2725,  "h": 11.542,  "font": "regular",       "size": 9,  "transform": ["uppercase"] },
+    { "id": "var_Supplier_product_code", "field": "Supplier_product_code", "x": 161.405,  "y": 159.7412, "w": 129.0801, "h": 11.542,  "font": "regular",       "size": 9 },
+    { "id": "var_Department",            "field": "Item_classification",   "x": 643.2477, "y": 83.5876,  "w": 74.4063,  "h": 10.0698, "font": "regular",       "size": 9 },
+    { "id": "var_Supplier_name",         "field": "Supplier_name",         "x": 648.4792, "y": 94.9294,  "w": 84.7969,  "h": 10.0698, "font": "regular",       "size": 9,  "transform": ["capitalize"] },
+    { "id": "var_today_date",            "field": "today_date",            "x": 507.3356, "y": 49.3069,  "w": 72.6914,  "h": 11.5425, "font": "regular",       "size": 9,  "format": "YYYY-MM-DD" },
 
-    { "id": "var_PLN", "field": "PLN", "x": 159.8239, "y": 399.7153, "w": 10.7314, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "",   "format": "0" },
-    { "id": "var_EUR", "field": "EUR", "x": 159.8239, "y": 331.6753, "w": 10.7305, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "€ ",   "format": "0" },
-    { "id": "var_BGN", "field": "BGN", "x": 159.8239, "y": 354.3555, "w": 10.7305, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "лв ",  "format": "0" },
-    { "id": "var_BAM", "field": "BAM", "x": 159.8239, "y": 377.0352, "w": 10.7305, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "KM ",  "format": "0" },
-    { "id": "var_RON", "field": "RON", "x": 159.8239, "y": 422.3955, "w": 10.7305, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "lei ", "format": "0" },
-    { "id": "var_CZK", "field": "CZK", "x": 159.8239, "y": 445.0752, "w": 10.7305, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "Kč ",  "format": "0" },
-    { "id": "var_RSD", "field": "RSD", "x": 159.8239, "y": 467.7554, "w": 10.7305, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "дин ", "format": "0" },
-    { "id": "var_HUF", "field": "HUF", "x": 159.8239, "y": 490.4351, "w": 10.7305, "h": 22.8271, "font": "Myriad Pro Semibold", "size": 21, "prefix": "Ft ",  "format": "0" },
+    { "id": "var_PLN", "field": "PLN", "x": 159.8239, "y": 399.7153, "w": 10.7314, "h": 22.8271, "font": "myriad_bold", "size": 21, "prefix": "",   "format": "0" },
+    { "id": "var_EUR", "field": "EUR", "x": 159.8239, "y": 331.6753, "w": 10.7305, "h": 22.8271, "font": "myriad_bold", "size": 21, "prefix": "€ ", "format": "0" },
+    { "id": "var_BGN", "field": "BGN", "x": 159.8239, "y": 354.3555, "w": 10.7305, "h": 22.8271, "font": "myriad_bold", "size": 21, "prefix": "лв ", "format": "0" },
+    { "id": "var_BAM", "field": "BAM", "x": 159.8239, "y": 377.0352, "w": 10.7305, "h": 22.8271, "font": "myriad_bold", "size": 21, "prefix": "KM ", "format": "0" },
+    { "id": "var_RON", "field": "RON", "x": 159.8239, "y": 422.3955, "w": 10.7305, "h": 22.8271, "font": "myriad_bold", "size": 21, "prefix": "lei ", "format": "0" },
+    { "id": "var_CZK", "field": "CZK", "x": 159.8239, "y": 445.0752, "w": 10.7305, "h": 22.8271, "font": "myriad_bold", "size": 21, "prefix": "Kč ", "format": "0" },
+    { "id": "var_RSD", "field": "RSD", "x": 159.8239, "y": 467.7554, "w": 10.7305, "h": 22.8271, "font": "myriad_bold", "size": 21, "prefix": "дин ", "format": "0" },
+    { "id": "var_HUF", "field": "HUF", "x": 159.8239, "y": 490.4351, "w": 10.7305, "h": 22.8271, "font": "myriad_bold", "size": 21, "prefix": "Ft ", "format": "0" },
 
-    { "id": "var_PRODUCT_NAME", "field": "product_name", "x": 120.1472, "y": 688.3909, "w": 116.2205, "h": 66.5782, "font": "Arial regular", "size": 5,
-      "transform": ["titlecase"], "style_spans": [{ "match": "\\|[A-Z]{2,}\\|", "font": "bold" }] }
+    { "id": "var_PRODUCT_NAME", "field": "product_name", "x": 120.1472, "y": 688.3909, "w": 116.2205, "h": 66.5782, "font": "arial_regular", "size": 5,
+      "transform": ["titlecase"], "style_spans": [{ "match": "\\|[A-Z]{2,}\\|", "font": "arial_bold" }] },
 
-  { "id": "var_COLLECTION",    "field": "COLLECTION",    "x": 120.3747, "y": 838.1089, "w": 48.9629, "h": 5.915 , "font": "Arial regular", "size": 9, "transform": ["uppercase","trim"] },
-  { "id": "var_COLOUR_SKU",    "field": "COLOUR_SKU",    "x": 120.3727, "y": 846.7705, "w": 51.5977, "h": 5.9141, "font": "Arial regular", "size": 9, "transform": ["uppercase","trim"] },
-  { "id": "var_STYLE",         "field": "STYLE",         "x": 120.3732, "y": 853.1318, "w": 34.0283, "h": 5.9141, "font": "Arial regular", "size": 9, "transform": ["uppercase","trim"] },
-  { "id": "var_Batch",         "field": "Batch",         "x": 120.3742, "y": 859.4785, "w": 31.0771, "h": 5.9141, "font": "Arial regular", "size": 9, "transform": ["uppercase","trim"] }
-
+    { "id": "var_COLLECTION",  "field": "COLLECTION",  "x": 120.3747, "y": 838.1089, "w": 48.9629, "h": 5.915,  "font": "arial_regular", "size": 9, "transform": ["uppercase","trim"] },
+    { "id": "var_COLOUR_SKU",  "field": "COLOUR_SKU",  "x": 120.3727, "y": 846.7705, "w": 51.5977, "h": 5.9141, "font": "arial_regular", "size": 9, "transform": ["uppercase","trim"] },
+    { "id": "var_STYLE",       "field": "STYLE",       "x": 120.3732, "y": 853.1318, "w": 34.0283, "h": 5.9141, "font": "arial_regular", "size": 9, "transform": ["uppercase","trim"] },
+    { "id": "var_Batch",       "field": "Batch",       "x": 120.3742, "y": 859.4785, "w": 31.0771, "h": 5.9141, "font": "arial_regular", "size": 9, "transform": ["uppercase","trim"] }
+  ],
 
   "barcode": {
-    "id_text": "var_Barcode",   
+    "id_text": "var_Barcode",
     "field": "barcode",
     "type": "EAN13",
     "box": { "x": 126.0147, "y": 881.4041, "w": 82.2047, "h": 25.5118 },
     "quiet_zone_mm": 3,
-    "font": "Myriad Pro regular",
+    "font": "myriad_regular",
     "size": 5,
     "black_is_k100": true,
     "validate_checksum": true
